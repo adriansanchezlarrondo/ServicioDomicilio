@@ -24,3 +24,4 @@ Registro de 1 solo restaurante.
 -Eliminar usuario: Un administrador puede eliminar cualquier usuario registrado en la plataforma
 
 ![Imagen Caso de Usos](casoUso.png)
+
