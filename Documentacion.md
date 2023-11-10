@@ -36,7 +36,7 @@ Hemos didivido la interficie en 3 zonas, el encabezado (header), el cuerpo princ
 * El header será meramente informativo.
 
 ### Regitro de un usuario
-![Imagen Boceto Registro](bocetos/registro.jpg)
+![Imagen Boceto Registro](bocetos/registro.png)
 ### Iniciar Sesión
 ![Imagen Boceto Iniciar Sesión](sesion.jpg)
 ### Editar mi Perfil
