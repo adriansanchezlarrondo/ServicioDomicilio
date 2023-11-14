@@ -49,12 +49,12 @@ Editar perfil será una ventana modal, es decir, se mostrará la ventana y el fo
 Esta ventana de edición permitirá, además de modificar los datos del usuario, añadir una imagen de avatar. Por el momento, en esta primera versión, podremos añadir el link de una imagen que esté alojada en un servidor.
 
 ### Vista de las secciones del restaurante
-![Imagen Boceto vista restaurante](bocetos/vistaRestaurante.jpg)
+![Imagen Boceto vista restaurante](bocetos/vistaRestaurante.png)
 
 En esta página podemos ver las secciones del restaurante seleccionado. Estas secciones se podrán ver o en parte izquierda de la página o deslizando la página hacía abajo.
 
 ### Vista dentro de una sección
-![Imagen Boceto vista sección](bocetos/vistaSeccion.png)
+![Imagen Boceto vista sección](bocetos/vistaSeccion.jpg)
 
 Una vez hayamos entrado en alguna sección veremos un listado de productos relacionados con el tipo de comida que haya en esa sección, con una foto del producto, el nombre, y su precio. Este listado será completamente clicable.
 
