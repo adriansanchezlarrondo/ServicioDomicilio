@@ -38,9 +38,9 @@ Hemos didivido la interficie en 3 zonas, el encabezado (header), el cuerpo princ
 ### Regitro de un usuario
 ![Imagen Boceto Registro](bocetos/registro.png)
 ### Iniciar Sesión
-![Imagen Boceto Iniciar Sesión](bocetos/sesion.jpg)
+![Imagen Boceto Iniciar Sesión](bocetos/sesion.png)
 ### Editar mi Perfil
-![Imagen Boceto Editar Perfil](bocetos/editarPefil.jpg)
+![Imagen Boceto Editar Perfil](bocetos/editarPefil.png)
 
 Editar perfil será una ventana modal, es decir, se mostrará la ventana y el fondo se volverá oscuro.
 
