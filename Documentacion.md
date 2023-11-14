@@ -40,7 +40,7 @@ Hemos didivido la interficie en 3 zonas, el encabezado (header), el cuerpo princ
 ### Iniciar Sesión
 ![Imagen Boceto Iniciar Sesión](bocetos/sesion.jpg)
 ### Editar mi Perfil
-![Imagen Boceto Editar Perfil](bocetos/perfil.jpg)
+![Imagen Boceto Editar Perfil](bocetos/editarPefil.jpg)
 
 Editar perfil será una ventana modal, es decir, se mostrará la ventana y el fondo se volverá oscuro.
 
