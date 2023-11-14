@@ -32,8 +32,10 @@ Registro de 1 solo restaurante.
 Hemos didivido la interficie en 3 zonas, un header, un main y un footer.
 
 * En el header vamos a alojar una barra superior fija con: el logo y nombre de la web, un menú central genérico (para acceder a contacto) y a la derecha un menu para iniciar sesión o registrarte.
-* El main albergará el contenido de las páginas. Será la sección que vaya cambiando dependiendo de la página que carguemos. La página contará con un buscador y con el logo de la aplicación.
+* El main albergará el contenido de las páginas. Será la sección que vaya cambiando dependiendo de la página que carguemos. La página contará con un buscador y con el logo de la aplicación. Una vez en el buscador pongas el tipo de comida que quieras pedir, cambiará la página enseñando un listado de restaurantes, con su foto, una valoración de los clientes e información del restaurante. 
 * El footer será meramente informativo.
+
+![Imagen Boceto buscador](bocetos/buscado.jpg)
 
 ### Regitro de un usuario
 ![Imagen Boceto Registro](bocetos/registro.png)
@@ -46,26 +48,18 @@ Editar perfil será una ventana modal, es decir, se mostrará la ventana y el fo
 
 Esta ventana de edición permitirá, además de modificar los datos del usuario, añadir una imagen de avatar. Por el momento, en esta primera versión, podremos añadir el link de una imagen que esté alojada en un servidor.
 
-### Listado de restaurantes
-![Imagen Boceto lista Restaurantes](bocetos/listado.jpg)
+### Vista de las secciones del restaurante
+![Imagen Boceto vista restaurante](bocetos/vistaRestaurante.jpg)
 
-En esta página podemos ver, en la pestaña izquierda, todos los proyectos en forma de tabla. La pestaña derecha mostrará solo los proyectos que ha subido el usuario que ha iniciado la sesión.
+En esta página podemos ver las secciones del restaurante seleccionado. Estas secciones se podrán ver o en parte izquierda de la página o deslizando la página hacía abajo.
 
-Al hacer clic en cualquier parte de la fila se accede al detalle del proyecto.
+### Vista dentro de una sección
+![Imagen Boceto vista sección](bocetos/vistaSeccion.png)
 
-También tenemos un buscador que permite buscar proyectos por palabras clave en el nombre o descripción.
+Una vez hayamos entrado en alguna sección veremos un listado de productos relacionados con el tipo de comida que haya en esa sección, con una foto del producto, el nombre, y su precio. Este listado será completamente clicable.
 
-Las celdas de encabezado de las tablas incluyen un icono (flecha hacia arriba o hacia abajo) que permitirá ordenar la tabla por la columna en concreto.
-
-### Vista dentro de restaurante
-![Imagen Boceto vista restaurante](bocetos/vistaRestaurante.png)
-
-En esta pestaña podemos ver los trabajos pertenecientes al usuario logueado. En cada fila aparece, además, un icono para editar y borrar el proyecto correspondiente. Por otro lado tenemos la opción de subir un nuevo proyecto.
-
-Habría que valorar si es mejor crear un único buscador para el nombre y descripción del proyecto o dos barras de busqueda, una para cada sección, tal y como se muestra en el boceto anterior.
-
-### Detalle de un proyecto
-![Imagen Boceto vista seccion](bocetos/seccion.jpg)
+### Elección producto
+![Imagen Boceto vista producto](bocetos/vistaProducto.jpg)
 
 Si el usuario que está viendo la información de un proyecto en concreto es el autor de dicho proyecto, aparecerá un icono para la edición del mismo.
 
@@ -76,8 +70,8 @@ Esta vista sirve tanto para crear un nuevo proyecto como para editarlo.
 
 Si el proyecto es nuevo, el botón mostrará el texto ENVIAR, pero si estamos editándolo aparecerá el texto ACTUALIZAR. Al crear o actualizar el proyecto, la web nos reenvía a la vista 'Detalle de proyecto'.
 
-### Panel administración de proyectos
-![Imagen Boceto administracion proyectos](bocetos/panel.jpg)
+### Editar/Añadir Restaurante
+![Imagen Boceto administracion proyectos](bocetos/editarRestaurante.jpg)
 
 Si tienes el rol 'administrador' aparecerá el item 'Panel administración' en el menú superior específico. Este item nos permite cargar la vista 'Panel administración de proyectos'. Desde esta vista también podemos acceder al 'Panel administración de usuarios'.
 
