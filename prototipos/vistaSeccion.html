@@ -39,7 +39,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" href="#"
+                    <a class="navbar-brand" href="home.html"
                         ><img
                             src="./images/logo.png"
                             alt=""
@@ -62,18 +62,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">A cerca de</a>
-                            </li>
-                        </ul>
                         <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"></a>
-                            </li>
                             <li class="nav-item dropdown">
                                 <a
                                     class="nav-link dropdown-toggle"
@@ -99,6 +88,105 @@
                     </div>
                 </div>
             </nav>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <!-- Elección de producto -->
+                <form novalidate action="procesa.php" method="get">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <!-- División en dos columnas para la distribución -->
+                                <div class="row">
+                                    <!-- Sección izquierda con campos de entrada -->
+                                    <div class="col-md-6 overflow-y-auto mh-100" style="height: 375px;">
+                                        <div class="form border shadow-sm p-3">
+                                            <div class="m-1" style="max-width: 400px;">
+                                                <!-- Contenido de ingredientes -->
+                                                <div>
+                                                    <label for="addIngredient" class="form-check-label d-block mb-2">Añadir Ingrediente:</label>
+                                                    <div class="form-check">
+                                                        <label for="addTomate" class="form-check-label ">Tomate</label>
+                                                        <input id="addTomate" name="addTomate" type="checkbox" class="form-check-input" />
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label for="addQueso" class="form-check-label ">Queso</label>
+                                                        <input id="addQueso" name="addQueso" type="checkbox" class="form-check-input" />
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label for="removeCebolla" class="form-check-label ">Cebolla crujiente</label>
+                                                        <input id="removeCebolla" name="removeCebolla" type="checkbox" class="form-check-input" />
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <label for="addSauce" class="form-check-label d-block my-2">Quitar Ingrediente:</label>
+                                                    <div class="form-check">
+                                                        <label for="removeBacon" class="form-check-label ">Bacon</label>
+                                                        <input id="removeBacon" name="removeBacon" type="checkbox" class="form-check-input" />
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label for="removeCebolla" class="form-check-label ">Cebolla crujiente</label>
+                                                        <input id="removeCebolla" name="removeCebolla" type="checkbox" class="form-check-input d-block" />
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label for="removeQueso" class="form-check-label ">Queso</label>
+                                                        <input id="removeQueso" name="removeQueso" type="checkbox" class="form-check-input" />
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <label for="addSauce" class="form-check-label d-block my-2">Añadir Salsa:</label>
+                                                    <div class="form-check">
+                                                        <label for="bbq" class="form-check-label ">BBQ</label>
+                                                        <input id="bbq" name="bbq" type="checkbox" class="form-check-input" />
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label for="mostaza" class="form-check-label ">Mostaza</label>
+                                                        <input id="mostaza" name="mostaza" type="checkbox" class="form-check-input d-block" />
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label for="yogur" class="form-check-label ">Yogur</label>
+                                                        <input id="yogur" name="yogur" type="checkbox" class="form-check-input" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Sección derecha con la imagen y botones -->
+                                    <div class="col-md-6">
+                                        <div class="form border shadow-sm p-3">
+                                            <div class="m-1" style="max-width: 400px;">
+                                                <!-- Contenido de la imagen -->
+                                                <div class="border shadow-sm p-3 mb-3">
+                                                    <div class="mx-auto mb-1 rounded-5 " style="
+                                                        background-image: url(./images/burguer.jfif);
+                                                        width: 200px;
+                                                        height: 200px;
+                                                        background-size: cover;
+                                                        background-position: center;
+                                                    "></div>
+                                                    <!-- Añadir o quitar un producto más -->
+                                                    <div class="d-flex justify-content-center align-items-center mt-3">
+                                                        <button type="button" id="minus" class="btn btn-primary">-</button>
+                                                        <span class="mx-4">1</span>
+                                                        <button type="button" id="more" class="btn btn-primary">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Botones de cancelar y añadir en el pie de página -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
         </header>
         <main>
             <div class="container card mt-5">
@@ -107,12 +195,12 @@
                     <div class="col-md-3">
                         <h5 class="border p-2 mb-0 ">SECCIONES</h5>
                         <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action">Hamburguesas ></a>
-                            <a href="#" class="list-group-item list-group-item-action">Pizzas</a>
-                            <a href="#" class="list-group-item list-group-item-action">Platos combinados</a>
-                            <a href="#" class="list-group-item list-group-item-action">Burritos</a>
-                            <a href="#" class="list-group-item list-group-item-action">Bebidas</a>
-                            <a href="#" class="list-group-item list-group-item-action">Postres</a>
+                            <a href="vistaSeccion.html" class="list-group-item list-group-item-action">Hamburguesas ></a>
+                            <a href="vistaSeccion.html" class="list-group-item list-group-item-action">Pizzas</a>
+                            <a href="vistaSeccion.html" class="list-group-item list-group-item-action">Platos combinados</a>
+                            <a href="vistaSeccion.html" class="list-group-item list-group-item-action">Burritos</a>
+                            <a href="vistaSeccion.html" class="list-group-item list-group-item-action">Bebidas</a>
+                            <a href="vistaSeccion.html" class="list-group-item list-group-item-action">Postres</a>
                         </div>
                     </div>
                     
@@ -123,13 +211,21 @@
                                 <div class="card mb-3" style="max-width: 540px;">
                                     <div class="row g-0 col">
                                       <div class="col-md-4">
-                                        <img src="./images/burguer.jfif" class="img-fluid rounded-start" alt="...">
+                                        <img src="./images/burguer.jfif" data-bs-toggle="modal" data-bs-target="#exampleModal" class="img-fluid rounded-start" alt="...">
                                         <p class="card-text p-4"><small class="text-body-secondary">10 €</small></p>
                                       </div>
                                       <div class="col-md-8">
                                         <div class="card-body">
                                           <h5 class="card-title">SMASH</h5>
                                           <p class="card-text">Hamburguesa aplastada con queso, bacon y cebolla crujiente.</p>
+                                          <button
+                                            type="button"
+                                            class="btn btn-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
+                                           >
+                                            Añadir
+                                           </button>
                                         </div>
                                       </div>
                                     </div>
@@ -139,13 +235,21 @@
                                 <div class="card mb-3" style="max-width: 540px;">
                                     <div class="row g-0 col">
                                       <div class="col-md-4">
-                                        <img src="./images/burguer.jfif" class="img-fluid rounded-start" alt="...">
+                                        <img src="./images/burguer.jfif" data-bs-toggle="modal" data-bs-target="#exampleModal" class="img-fluid rounded-start" alt="...">
                                         <p class="card-text p-4 "><small class="text-body-secondary">10 €</small></p>
                                       </div>
                                       <div class="col-md-8">
                                         <div class="card-body">
                                           <h5 class="card-title">CHEESEBURGER</h5>
                                           <p class="card-text">Hamburguesa con tomate, lechuga, bacon y extra de queso.</p>
+                                          <button
+                                            type="button"
+                                            class="btn btn-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
+                                           >
+                                            Añadir
+                                           </button>
                                         </div>
                                       </div>
                                     </div>
@@ -156,13 +260,21 @@
                                 <div class="card mb-3" style="max-width: 540px;">
                                     <div class="row g-0 col">
                                       <div class="col-md-4">
-                                        <img src="./images/burguer.jfif" class="img-fluid rounded-start" alt="...">
+                                        <img src="./images/burguer.jfif" data-bs-toggle="modal" data-bs-target="#exampleModal" class="img-fluid rounded-start" alt="...">
                                         <p class="card-text p-4"><small class="text-body-secondary">10 €</small></p>
                                       </div>
                                       <div class="col-md-8">
                                         <div class="card-body">
                                           <h5 class="card-title">DOUBLEBURGER</h5>
-                                          <p class="card-text">Hamburguesa doble con doble de queso y doble de bacon.</p>
+                                          <p class="card-text">Hamburguesa doble con doble de queso y doble de bacon y salsa especial.</p>
+                                          <button
+                                            type="button"
+                                            class="btn btn-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
+                                           >
+                                            Añadir
+                                           </button>
                                         </div>
                                       </div>
                                     </div>
@@ -173,13 +285,21 @@
                                 <div class="card mb-3" style="max-width: 540px;">
                                     <div class="row g-0 col">
                                       <div class="col-md-4">
-                                        <img src="./images/burguer.jfif" class="img-fluid rounded-start" alt="...">
+                                        <img src="./images/burguer.jfif" data-bs-toggle="modal" data-bs-target="#exampleModal" class="img-fluid rounded-start" alt="...">
                                         <p class="card-text p-4 "><small class="text-body-secondary">10 €</small></p>
                                       </div>
                                       <div class="col-md-8">
                                         <div class="card-body">
                                           <h5 class="card-title">BUGER ANGUS</h5>
                                           <p class="card-text">Hamburguesa Angus con queso, tomate, lechuga, y salsa de yogur.</p>
+                                          <button
+                                            type="button"
+                                            class="btn btn-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
+                                           >
+                                            Añadir
+                                           </button>
                                         </div>
                                       </div>
                                     </div>
@@ -193,15 +313,15 @@
         <footer class="">
             <nav class="navbar bg-secondary fixed-bottom small">
                 <div class="container">
-                    <a class="navbar-brand" href="http://www.fpllefia.com">
+                    <a class="navbar-brand" href="home.html">
                         <img
                             src="./images/logo.png"
-                            alt="fpllefia"
+                            alt=""
                             width="35"
                             height="35"
                             class="d-inline-block"
                         />
-                        FPLlefià
+                        TuPide
                     </a>
                     <span class="navbar-text">@Texto de header</span>
                     <a href="#" class="nav-link">Vínculo header</a>
